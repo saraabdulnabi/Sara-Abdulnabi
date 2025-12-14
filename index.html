@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>First Project </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 Homework </title>
+    <style>
+      h1{
+        color:blue;
+        text-align:center;
+      }
+      a,p{font-family: Arial, Helvetica, sans-serif;
+        font-size:20px;}
+      
+      button{
+        background-color: gray;
+        color:white;
+        padding:10px;
+      }
+     image{
+        width:200px;
+        height:200px;
+     }
+
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <main id="first">
+    <h1>HTML Concept!</h1>
     <p>HTML (HyperText Markup Language) is the standard language for creating and structuring web pages using tags and elements. It defines how content like text, images, and links appear in a browser.</p>
-    <a href="https://www.geeksforgeeks.org/html/html-introduction/">HTML Resource</a>
-    <img src="https://en.wikipedia.org/wiki/HTML">
-    <button>Click</button>
+    <img src="images/html.png" alt="HTML-logo image"/><br/>
+     <a href="https://www.geeksforgeeks.org/html/html-introduction/">HTML Resource</a><br/><br/>
+    <button onclick="move()">Click</button>
+    </div>
+
+    <script>
+      function move(){
+      alert("Button Clicked");}
+    </script>
   </body>
 </html>
