@@ -3,126 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <style>
-        body{ display: grid;
-        grid-template-rows: auto 1fr auto;
-            background-color:#9C7A96;
-        }
-        .header{
-            display: flex;
-            justify-content: space-between;
-            align-items:center;
-            background-color: white;
-            padding: 10px 20px;
-        }
-        .logo{
-            align-items: center;
-            margin-left: 50px;
-        }
-        .navigation a{
-            margin:0 15px;
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-        h1{
-            align-items: center;
-            margin-left: 150px;
-        }
-        .text1{
-            align-items: center;
-            margin-left: 50px;
-        }
-        .text2{
-            align-items: center;
-            margin-left: 160px;
-        }
-        .hero-image{
-            display: flex;
-           margin-left: 200px;
-           border-radius: 20px;}
-        .start{
-            margin-left: 220px;
-            background-color: #D9C0D5;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .container{
-            width: 300px;
-            height: 300px;
-            display:flex;
-            gap:40px;
-            flex-wrap: wrap;      }
-        .card1, .card2, .card3{
-            background-color:white;
-             border-radius: 10px;
-            padding: 20px;
-            text-align: center;}
-
-        
-    </style>
+    <title>Full Stack Development</title>
+    <link rel="stylesheet" href="flow.css">
 </head>
 <body>
-    <header class="header">
-        <img class="logo" src="C:\Users\USER\Downloads\logo.png" alt="logo" width="50" height="50">
+    <header >
+        <img  class="logo"src="C:\Users\USER\Downloads\logo.png" alt="logo" width="50" height="50">
         <nav class="navigation">
             <a href="#">Home</a>
             <a href="#">Courses</a>
             <a href="#">BootCamp</a>
+            <a href="#">Road Maps</a>
             <a href="#">Paths</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
         </nav>
+        <div class="icons">
+            <span>🔍</span>
+            <span>👤</span>
+        </div>
     </header>
+
     <main>
       <section class="hero">
-        <h1>Code The Web </h1>
-        <h1>Own The Stack</h1>
-        <h3 class="text1">Turn ideas into code &nbsp; | &nbsp; Go from Learner To Builder</h3>
-        <h3 class="text2">Launch Your Career</h3>
-        <img class="hero-image" src="C:\Users\USER\Downloads\unnamed.jpg" alt="hero image" width="300" height="300">
-         <button class="start">Start Now</button>
-         <button class="view">View Roadmaps</button>
+       <div class="hero-content">
+         <h1> Code The Web :)<br>Own The Stack !</h1>
+         <p>Turn ideas into code &nbsp; | &nbsp; Go from learner to builder<br>
+           Launch your career&nbsp; &nbsp; &nbsp;| &nbsp; Code with confidence </p>
+       
+         <div class="btn-group">
+          <button class="btn start">Start Now</button>
+          <button class="btn view">View Roadmaps</button>
+         </div>
+       </div>
+       <div class="hero-image">
+           <img src="C:\Users\USER\Downloads\unnamed.jpg" alt="hero image" width="300" height="300">
+       </div>
       </section>
-      <section>
-        <h3>Popular Courses</h3>
+      <section class="courses">
+        <h2>Popular Courses</h2>
         <div class="container">
-           <div class="card1"> 
+           <div class="card"> 
              <img src="C:\Users\USER\Downloads\2.png" alt="course1" width="30" height="30">
-             <h3>Front-End <br>
-               Java Script</h3>
+             <p>Front-End <br>
+               (Java Script)</p>
            </div>
-           <div class="card2">
+           <div class="card">
             <img src="C:\Users\USER\Downloads\1.png" alt="course2" width="30" height="30">
-             <h3>Back-End <br>
-               Node.js</h3>
+             <p>Back-End <br>
+               (Node.js)</p>
             </div>
-            <div class="card3">
+            <div class="card">
                 <img src="C:\Users\USER\Downloads\mern.jpg" alt="course3" width="30" height="30">
-                <h3>BootCamp<br>
-                Mern Full-Stack</h3>
+                <p>BootCamp<br>
+                (MERN Full-Stack)</p>
             </div>
+        </div>
       </section>
     </main>
+
     <footer>
+      <div class="footer-content">
         <img class="logo" src="C:\Users\USER\Downloads\logo.png" alt="logo" width="50" height="50">
-        <nav class="navigation">
-         <a  class="privacy" href="#">Privacy Policy</a>
+        <div class="footer-links">
+         <a href="#">Privacy Policy</a>
          <a href="#">Terms of Service</a>
-         <a  class="success" href="#">Success Stories</a>
-        </nav>
+         <a href="#">Success Stories</a>
+        </div>
+     </div>
     
-    <div class="social">
-         <img src="C:\Users\USER\Downloads\linkedin.png" alt="linkedin" width="10" height="10">
-         <img src="C:\Users\USER\Downloads\instagram.png" alt="instagram" width="10" height="10">
-         <img src="C:\Users\USER\Downloads\facebook.png" alt="facebook" width="10" height="10">
-         <img src="C:\Users\USER\Downloads\twitter.png" alt="twitter" width="10" height="10">
-        <img src="C:\Users\USER\Downloads\gmail.png" alt="gmail" width="10" height="10">
-    </div>
-    </footer>
+     <div class="social">
+         <img src="C:\Users\USER\Downloads\linkedin.png" alt="linkedin">
+         <img src="C:\Users\USER\Downloads\instagram.png" alt="instagram" >
+         <img src="C:\Users\USER\Downloads\facebook.png" alt="facebook" >
+         <img src="C:\Users\USER\Downloads\twitter.png" alt="twitter" >
+        <img src="C:\Users\USER\Downloads\gmail.png" alt="gmail" >
+     </div>
+   </footer>
 </body>
 </html>
