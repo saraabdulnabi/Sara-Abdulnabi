@@ -4,14 +4,23 @@ body {
 }
 
 .navbar {
-    padding: 1rem 0;
+    background-color: rgb(109, 188, 188);
+}
+.navbar a{
+    margin-left: 20px;
+}
+.navbar img{
+    align-items:center;
+    margin-left: 30px;
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
     letter-spacing: 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+.btn-primary{
+    background-color:#7077A1;
+}
 .custom-card {
     border: none;
     border-radius: 15px;
@@ -23,7 +32,7 @@ body {
 .custom-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    border: 1px solid #0d6efd; 
+    border: 1px solid #7077A1; 
 }
 
 .card-img-top {
@@ -33,11 +42,15 @@ body {
 
 .btn-primary {
     border-radius: 25px; 
-    padding: 0.5rem 1.5rem;
     font-weight: 500;
 }
 
 .btn-outline-primary {
-    border-radius: 25px;
     transition: 0.3s;
+}
+.d-flex{
+    padding-left: 20px;
+}
+.d-flex .btn-primary{
+width:200px;
 }
