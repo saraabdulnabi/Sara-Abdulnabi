@@ -1,0 +1,59 @@
+$teal: #0d9488;
+$coral: #fb7185;
+$dark: #0f172a;
+$light-bg: #f8fafc;
+
+.text-teal { color: $teal !important; }
+.text-coral { color: $coral !important; }
+
+.navbar {
+    background-color: #fff;
+    border-bottom: 2px solid $teal;
+    
+    .navbar-brand { color: $teal; }
+    .nav-link:hover { color: $teal !important; }
+}
+
+.btn-primary {
+    background-color: $teal !important;
+    border-color: $teal !important;
+    border-radius: 50px; // Pill shape for a modern look
+    transition: transform 0.2s ease;
+
+    &:hover {
+        background-color: darken($teal, 10%) !important;
+        transform: translateY(-2px);
+    }
+}
+
+.btn-outline-primary {
+    color: $teal !important;
+    border-color: $teal !important;
+    border-radius: 50px;
+
+    &:hover {
+        background-color: $teal !important;
+        color: white !important;
+    }
+}
+
+.travel-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    img {
+        height: 220px;
+        object-fit: cover;
+    }
+
+    &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+}
+
+// FOOTER CUSTOMIZATION
+.footer {
+    background-color: $dark;
+}
