@@ -525,12 +525,7 @@ a {
         font-size: 1rem;
     }
 }
-/* ====================
-   Hero Buttons Animation ONLY
-   Keep their original appearance!
-   ==================== */
 
-/* Animation for both hero buttons */
 @keyframes heroButtonPulse {
     0%, 100% {
         transform: translateY(0);
@@ -542,19 +537,16 @@ a {
     }
 }
 
-/* Apply pulse animation to both hero buttons */
 .hero-buttons .btn {
     animation: heroButtonPulse 3s infinite ease-in-out;
 }
 
-/* Special hover effect for hero buttons */
 .hero-buttons .btn:hover {
     animation-play-state: paused;
     transform: translateY(-8px) scale(1.05);
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-/* Keep button-specific hover effects */
 .hero-buttons .btn-primary:hover {
     background: linear-gradient(to right, var(--primary-dark), var(--primary));
     box-shadow: 0 15px 30px rgba(228, 124, 156, 0.3);
@@ -565,7 +557,6 @@ a {
     box-shadow: 0 15px 30px rgba(228, 124, 156, 0.3);
 }
 
-/* Icon animation on hover */
 .hero-buttons .btn:hover i {
     animation: iconBounce 0.5s ease-in-out;
 }
@@ -579,7 +570,6 @@ a {
     }
 }
 
-/* Responsive: stop animation on mobile */
 @media (max-width: 768px) {
     .hero-buttons .btn {
         animation: none;
@@ -591,7 +581,6 @@ a {
 }
 
 
-/* Path Cards */
 .path-card {
     border: none;
     border-radius: var(--radius-lg);
@@ -711,7 +700,6 @@ a {
     font-weight: 500;
 }
 
-/* Feature Cards */
 .feature-card {
     background: white;
     border-radius: var(--radius-lg);
@@ -751,7 +739,6 @@ a {
     color: var(--gray);
 }
 
-/* Service Cards */
 .service-card {
     background: white;
     border-radius: var(--radius-lg);
@@ -791,7 +778,6 @@ a {
     color: var(--gray);
 }
 
-/* Gallery Cards */
 .gallery-card {
     background: white;
     border-radius: var(--radius-lg);
@@ -847,7 +833,6 @@ a {
     font-weight: 500;
 }
 
-/* Cards Responsive */
 @media (max-width: 992px) {
     .path-card, .course-card, .feature-card, .service-card, .gallery-card {
         margin-bottom: 1.5rem;
@@ -891,7 +876,6 @@ a {
     }
 }
 
-/* CTA Section */
 .cta-section {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     color: white;
@@ -982,7 +966,6 @@ a {
     }
 }
 
-/* Footer */
 .footer {
     background: linear-gradient(to bottom, var(--dark), #1a2530);
     color: white;
@@ -1091,7 +1074,6 @@ a {
     transform: translateY(-3px);
 }
 
-/* Footer Responsive */
 @media (max-width: 768px) {
     .footer {
         padding-top: var(--spacing-lg);
@@ -1133,7 +1115,6 @@ a {
     }
 }
 
-/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -1166,7 +1147,6 @@ a {
     }
 }
 
-/* Utility Classes */
 .text-gradient {
     background: linear-gradient(to right, var(--primary), var(--secondary));
     -webkit-background-clip: text;
@@ -1182,7 +1162,6 @@ a {
     box-shadow: var(--shadow-lg);
 }
 
-/* Grid System Overrides for better responsiveness */
 @media (max-width: 992px) {
     .row.g-4 {
         --bs-gutter-x: 1.5rem;
@@ -1197,7 +1176,6 @@ a {
     }
 }
 
-/* Container padding for mobile */
 @media (max-width: 768px) {
     .container {
         padding-left: 1rem;
@@ -1205,13 +1183,11 @@ a {
     }
 }
 
-/* Ensure images are responsive */
 img {
     max-width: 100%;
     height: auto;
 }
 
-/* Hide scroll indicator on very small screens */
 @media (max-width: 400px) {
     .scroll-indicator {
         display: none;

@@ -92,6 +92,5 @@ if (firstCard) {
     firstCard.style.border = "3px solid yellow";
     firstCard.style.boxShadow = "0 0 15px rgba(221, 255, 0, 0.99)";
     firstCard.style.transform = "scale(1.05)";
-    firstCard.style.transition = "all 0.3s ease";
 }
 
