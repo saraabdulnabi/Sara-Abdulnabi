@@ -30,14 +30,29 @@ document.addEventListener("DOMContentLoaded", () => {
             actionButton.classList.add("disabled");
         }
     });
-
-
-    actionButton.addEventListener("click", () => {
-        const userName = nameInput.value.trim();
-        messageArea.textContent = `Welcome, ${userName}! You are ready to learn.`;
-        messageArea.classList.add("text-gradient");
+     function getData(name) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (name.length > 0) {
+                resolve(`Welcome, ${name}! You are ready to learn.`);
+            } else {
+                reject("Name cannot be empty!");
+            }
+        }, 2000); 
     });
-
+}
+    actionButton.addEventListener("click", async () => {
+    const userName = nameInput.value.trim();
+    messageArea.textContent = "Loading...";
+    try {
+        const result = await getData(userName);
+        messageArea.textContent = result;
+        messageArea.classList.add("text-gradient");
+    } catch (error) {
+        messageArea.textContent = error;
+        messageArea.classList.remove("text-gradient");
+    }
+});
 
     resetButton.addEventListener("click", () => {
         nameInput.value = "";
