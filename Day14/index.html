@@ -23,11 +23,8 @@
   <div id="products"></div>
 
   <script>
-    const button = document.getElementById("loadBtn");
     const productsDiv = document.getElementById("products");
     const status = document.getElementById("status");
-
-    button.addEventListener("click", loadProducts);
 
     async function loadProducts() {
       status.innerText = "Loading...";
